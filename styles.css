@@ -13,11 +13,11 @@
   --serif:'Newsreader', Georgia, serif;
   --wrap:1280px;
   --gutter:clamp(1.25rem,5vw,5rem);
-  --fs-hero:clamp(2.9rem,8.5vw,7.5rem);
-  --fs-display:clamp(2.2rem,6vw,5rem);
-  --fs-h2:clamp(1.9rem,4.4vw,3.6rem);
-  --fs-h3:clamp(1.35rem,2.4vw,2.1rem);
-  --fs-lead:clamp(1.2rem,1.9vw,1.6rem);
+  --fs-hero:clamp(2.3rem,5.2vw,4.4rem);
+  --fs-display:clamp(1.9rem,3.8vw,3.1rem);
+  --fs-h2:clamp(1.6rem,3vw,2.5rem);
+  --fs-h3:clamp(1.25rem,2vw,1.7rem);
+  --fs-lead:clamp(1.1rem,1.5vw,1.35rem);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -51,8 +51,8 @@ nav.main a.talk::after{display:none}
 
 /* sections */
 main{display:block}
-section.block{padding-block:clamp(3.5rem,8vw,7rem)}
-section.block.tight{padding-block:clamp(2.5rem,5vw,4rem)}
+section.block{padding-block:clamp(2.75rem,5.5vw,4.75rem)}
+section.block.tight{padding-block:clamp(2rem,3.5vw,3rem)}
 
 .eyebrow{font-size:.72rem;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--copper);margin-bottom:1.4rem}
 h1,h2,h3{font-weight:700;line-height:1.02;letter-spacing:-.025em}
@@ -61,7 +61,7 @@ p{max-width:62ch}
 .measure-wide p{max-width:70ch}
 
 /* hero */
-.hero{min-height:calc(100svh - 74px);display:grid;grid-template-columns:1.15fr .85fr;align-items:stretch}
+.hero{min-height:min(74vh,600px);display:grid;grid-template-columns:1.1fr .9fr;align-items:stretch}
 .hero-copy{display:flex;flex-direction:column;justify-content:center;padding:clamp(2rem,5vw,4rem) var(--gutter);padding-left:max(var(--gutter),calc((100vw - var(--wrap))/2 + var(--gutter)))}
 .hero h1{font-size:var(--fs-hero);font-weight:800;letter-spacing:-.03em}
 .hero h1 .p{color:var(--copper)}
@@ -106,7 +106,7 @@ img.art{min-height:260px}
 .band .statement .c{color:var(--ochre)}
 
 /* three ways in */
-.door{display:grid;grid-template-columns:1fr 1fr;min-height:min(72vh,640px);border-top:1px solid var(--line)}
+.door{display:grid;grid-template-columns:1fr 1fr;min-height:min(54vh,440px);border-top:1px solid var(--line)}
 .door:last-child{border-bottom:1px solid var(--line)}
 .door .txt{display:flex;flex-direction:column;justify-content:center;padding:clamp(2.2rem,5vw,4.5rem) var(--gutter)}
 .door:nth-child(even) .txt{order:2}
