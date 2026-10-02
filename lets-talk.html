@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Let's Talk — Elspeth Taylor Coaching</title>
+<meta name="description" content="Start with a conversation. No pitch, no obligation to know exactly what you need. Tell me a little about what's going on and we'll explore what working together could look like.">
+<meta property="og:title" content="Let's Talk — Elspeth Taylor Coaching">
+<meta property="og:description" content="Start with a conversation. Book a discovery call.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Newsreader:ital,opsz,wght@1,6..72,400;0,6..72,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a href="#main" class="skip">Skip to content</a>
+<header class="site">
+  <div class="wrap bar">
+    <a href="index.html" class="brand" aria-label="Elspeth Taylor Coaching — home">
+      <span class="name">ELSPETH TAYLOR</span><span class="desc">Coaching</span><span class="et" aria-hidden="true">ET<b>.</b></span>
+    </a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="mainnav">Menu</button>
+    <nav class="main" id="mainnav" aria-label="Primary">
+      <a href="life.html">Life</a><a href="sport.html">Sport</a><a href="work.html">Work</a><a href="how-i-coach.html">How I Coach</a><a href="about.html">About</a><a href="lets-talk.html" class="talk">Let's Talk</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="block">
+    <div class="wrap">
+      <p class="eyebrow reveal">Let's talk</p>
+      <h1 class="statement reveal" style="color:var(--ink);font-size:var(--fs-display)">Start with a <span class="c">conversation.</span></h1>
+      <p class="lead reveal" style="margin-top:1.6rem;max-width:56ch">No pitch. No obligation to know exactly what you need. Tell me a little about what's going on. We'll have a conversation, see whether I'm the right person to work with you, and explore what working together could look like.</p>
+      <div class="reveal" style="margin-top:2rem"><a href="#enquiry" class="btn btn-primary">Book a discovery call</a> <span class="note-min" style="margin-left:.6rem">(connect your booking tool here)</span></div>
+    </div>
+  </section>
+
+  <section class="block tight" id="enquiry">
+    <div class="wrap">
+      <form class="enq reveal" action="#" method="post" onsubmit="event.preventDefault();document.getElementById('formmsg').hidden=false;this.reset();">
+        <div class="fld">
+          <label for="f-name">Name</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="fld">
+          <label for="f-email">Email</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="fld">
+          <label>What's brought you here?</label>
+          <div class="chips" role="group" aria-label="What's brought you here">
+            <label><input type="radio" name="area" value="Life"> Life</label>
+            <label><input type="radio" name="area" value="Sport"> Sport</label>
+            <label><input type="radio" name="area" value="Work"> Work</label>
+            <label><input type="radio" name="area" value="Not sure"> Not sure</label>
+          </div>
+        </div>
+        <div class="fld">
+          <label for="f-changing">What's changing?</label>
+          <textarea id="f-changing" name="changing"></textarea>
+        </div>
+        <div class="fld">
+          <label for="f-different">What would you love to be different?</label>
+          <textarea id="f-different" name="different"></textarea>
+        </div>
+        <div class="fld">
+          <label for="f-else">Anything else you'd like me to know?</label>
+          <textarea id="f-else" name="else"></textarea>
+        </div>
+        <div>
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <span class="note-min" style="margin-left:.8rem">Only name and email are needed — the rest is up to you.</span>
+        </div>
+        <p id="formmsg" hidden style="color:var(--copper);font-weight:600">Thanks — your message is ready to send once the form is connected to email. I'll be in touch to arrange a conversation.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="top">
+      <div><div class="et-mark" aria-hidden="true">ET<b>.</b></div><div class="name">ELSPETH TAYLOR</div><div class="desc">Coaching</div><div class="sig">Change. Possibility. Momentum.</div></div>
+      <div><h5>Explore</h5><div class="fnav"><a href="life.html">Life</a><a href="sport.html">Sport</a><a href="work.html">Work</a><a href="how-i-coach.html">How I Coach</a><a href="ways-to-work.html">Ways to Work</a><a href="about.html">About</a></div></div>
+      <div><h5>Connect</h5><div class="fnav"><a href="lets-talk.html">Let's Talk</a><a href="#" aria-label="LinkedIn (add link)">LinkedIn</a><a href="#" aria-label="Instagram (add link)">Instagram</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms &amp; Disclaimer</a></div></div>
+    </div>
+    <div class="legal"><span>© <span id="yr"></span> Elspeth Taylor Coaching. All rights reserved.</span><span>Coaching is not therapy or medical care.</span></div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
